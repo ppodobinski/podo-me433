@@ -1430,9 +1430,9 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
- .text          0x0000000000000000        0x0 /tmp/ccvtG8jN.o
- .data          0x0000000000000000        0x0 /tmp/ccvtG8jN.o
- .bss           0x0000000000000000        0x0 /tmp/ccvtG8jN.o
+ .text          0x0000000000000000        0x0 /tmp/cchpB5aW.o
+ .data          0x0000000000000000        0x0 /tmp/cchpB5aW.o
+ .bss           0x0000000000000000        0x0 /tmp/cchpB5aW.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-atexit.o)
@@ -1667,7 +1667,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccvtG8jN.o
+ .boot2         0x0000000010000000      0x100 /tmp/cchpB5aW.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -3452,7 +3452,7 @@ LOAD CMakeFiles/hw3.dir/pico-sdk/lib/tinyusb/src/tusb.c.obj
 LOAD CMakeFiles/hw3.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 LOAD CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-LOAD /tmp/ccvtG8jN.o
+LOAD /tmp/cchpB5aW.o
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -3569,7 +3569,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000000000007a8       0x2c CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .ARM.attributes
-                0x00000000000007d4       0x22 /tmp/ccvtG8jN.o
+                0x00000000000007d4       0x22 /tmp/cchpB5aW.o
  .ARM.attributes
                 0x00000000000007f6       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
@@ -4308,104 +4308,104 @@ LOAD linker stubs
  .debug_ranges  0x0000000000005170       0x50 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-makebuf.o)
  .debug_ranges  0x00000000000051c0      0x178 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-mprec.o)
 
-.debug_line     0x0000000000000000    0x206b7
- .debug_line    0x0000000000000000      0x4b3 CMakeFiles/hw3.dir/src/hw3.c.obj
- .debug_line    0x00000000000004b3      0xbbd CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x0000000000001070      0x1af CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_line    0x000000000000121f      0x38e CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_line    0x00000000000015ad      0x38b CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x0000000000001938      0xf25 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x000000000000285d      0x165 CMakeFiles/hw3.dir/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x00000000000029c2      0xf92 CMakeFiles/hw3.dir/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_line    0x0000000000003954      0x1f0 CMakeFiles/hw3.dir/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_line    0x0000000000003b44     0x1a6d CMakeFiles/hw3.dir/pico-sdk/src/common/pico_time/time.c.obj
- .debug_line    0x00000000000055b1      0xacf CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x0000000000006080      0x80d CMakeFiles/hw3.dir/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_line    0x000000000000688d      0x857 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x00000000000070e4      0x431 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x0000000000007515      0x37e CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_line    0x0000000000007893      0x203 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x0000000000007a96      0x94a CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x00000000000083e0     0x1151 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x0000000000009531      0x136 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_line    0x0000000000009667      0x19c CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x0000000000009803      0x2bf CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_line    0x0000000000009ac2      0x414 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_line    0x0000000000009ed6      0x268 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_line    0x000000000000a13e      0x68c CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_line    0x000000000000a7ca       0x86 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_line    0x000000000000a850      0x3ca CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_line    0x000000000000ac1a      0x25a CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_line    0x000000000000ae74      0x1b6 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_line    0x000000000000b02a       0xb0 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_line    0x000000000000b0da       0xbe CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_line    0x000000000000b198      0x115 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_line    0x000000000000b2ad      0xd00 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_line    0x000000000000bfad      0x386 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_line    0x000000000000c333      0xbe3 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_line    0x000000000000cf16      0x222 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_line    0x000000000000d138      0x26e CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_line    0x000000000000d3a6      0x697 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_line    0x000000000000da3d      0xd3c CMakeFiles/hw3.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_line    0x000000000000e779      0x904 CMakeFiles/hw3.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_line    0x000000000000f07d     0x1ef9 CMakeFiles/hw3.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .debug_line    0x0000000000010f76      0x3f0 CMakeFiles/hw3.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_line    0x0000000000011366      0xd23 CMakeFiles/hw3.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_line    0x0000000000012089      0xad8 CMakeFiles/hw3.dir/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_line    0x0000000000012b61     0x1478 CMakeFiles/hw3.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_line    0x0000000000013fd9      0x22b CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
- .debug_line    0x0000000000014204       0x60 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0000000000014264      0x15e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-atoi.o)
- .debug_line    0x00000000000143c2      0x1d1 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-callocr.o)
- .debug_line    0x0000000000014593       0xe4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-impure.o)
- .debug_line    0x0000000000014677      0x8e2 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-mallocr.o)
- .debug_line    0x0000000000014f59      0x13e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-mlock.o)
- .debug_line    0x0000000000015097      0x6ed /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-reallocr.o)
- .debug_line    0x0000000000015784      0x183 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-sbrkr.o)
- .debug_line    0x0000000000015907      0x1ac /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-scanf.o)
- .debug_line    0x0000000000015ab3      0x172 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
- .debug_line    0x0000000000015c25      0x43f /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strtol.o)
- .debug_line    0x0000000000016064     0x16ea /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-vfscanf.o)
- .debug_line    0x000000000001774e       0x5e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-ctype_.o)
- .debug_line    0x00000000000177ac      0x10f /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-errno.o)
- .debug_line    0x00000000000178bb      0x5cd /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-findfp.o)
- .debug_line    0x0000000000017e88      0x3e2 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-fread.o)
- .debug_line    0x000000000001826a      0x47d /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-freer.o)
- .debug_line    0x00000000000186e7      0x262 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-fwalk.o)
- .debug_line    0x0000000000018949       0xf2 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-iswspace.o)
- .debug_line    0x0000000000018a3b      0x1be /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-iswspace_l.o)
- .debug_line    0x0000000000018bf9      0x245 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-locale.o)
- .debug_line    0x0000000000018e3e      0x1c3 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-localeconv.o)
- .debug_line    0x0000000000019001      0x288 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-mbrtowc.o)
- .debug_line    0x0000000000019289      0x200 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-mbtowc_r.o)
- .debug_line    0x0000000000019489      0x1e1 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-memmove.o)
- .debug_line    0x000000000001966a      0x27e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-reent.o)
- .debug_line    0x00000000000198e8      0x355 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-refill.o)
- .debug_line    0x0000000000019c3d      0x1b4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-sccl.o)
- .debug_line    0x0000000000019df1       0xad /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-sf_nan.o)
- .debug_line    0x0000000000019e9e      0x238 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-stdio.o)
- .debug_line    0x000000000001a0d6       0xb0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strcmp.o)
- .debug_line    0x000000000001a186     0x1583 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strtod.o)
- .debug_line    0x000000000001b709      0x3ab /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strtoll.o)
- .debug_line    0x000000000001bab4      0x38d /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strtoul.o)
- .debug_line    0x000000000001be41      0x3b5 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strtoull.o)
- .debug_line    0x000000000001c1f6      0x40c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-ungetc.o)
- .debug_line    0x000000000001c602      0x1f6 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-wctomb_r.o)
- .debug_line    0x000000000001c7f8      0x17e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-writer.o)
- .debug_line    0x000000000001c976      0x183 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-closer.o)
- .debug_line    0x000000000001caf9      0x2c6 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-fclose.o)
- .debug_line    0x000000000001cdbf      0x472 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-fflush.o)
- .debug_line    0x000000000001d231      0xaea /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-gdtoa-gethex.o)
- .debug_line    0x000000000001dd1b      0x3fd /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-gdtoa-hexnan.o)
- .debug_line    0x000000000001e118      0x161 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-lnumeric.o)
- .debug_line    0x000000000001e279      0x17e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-lseekr.o)
- .debug_line    0x000000000001e3f7      0x38b /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-makebuf.o)
- .debug_line    0x000000000001e782     0x17e1 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-mprec.o)
- .debug_line    0x000000000001ff63      0x17d /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-readr.o)
- .debug_line    0x00000000000200e0       0xae /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-s_nan.o)
- .debug_line    0x000000000002018e      0x1a9 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strncmp.o)
- .debug_line    0x0000000000020337      0x1fc /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-fstatr.o)
- .debug_line    0x0000000000020533      0x184 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-isattyr.o)
+.debug_line     0x0000000000000000    0x206b9
+ .debug_line    0x0000000000000000      0x4b5 CMakeFiles/hw3.dir/src/hw3.c.obj
+ .debug_line    0x00000000000004b5      0xbbd CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x0000000000001072      0x1af CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_line    0x0000000000001221      0x38e CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_line    0x00000000000015af      0x38b CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x000000000000193a      0xf25 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x000000000000285f      0x165 CMakeFiles/hw3.dir/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x00000000000029c4      0xf92 CMakeFiles/hw3.dir/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x0000000000003956      0x1f0 CMakeFiles/hw3.dir/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_line    0x0000000000003b46     0x1a6d CMakeFiles/hw3.dir/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_line    0x00000000000055b3      0xacf CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x0000000000006082      0x80d CMakeFiles/hw3.dir/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_line    0x000000000000688f      0x857 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x00000000000070e6      0x431 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x0000000000007517      0x37e CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_line    0x0000000000007895      0x203 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x0000000000007a98      0x94a CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x00000000000083e2     0x1151 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x0000000000009533      0x136 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_line    0x0000000000009669      0x19c CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x0000000000009805      0x2bf CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_line    0x0000000000009ac4      0x414 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_line    0x0000000000009ed8      0x268 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_line    0x000000000000a140      0x68c CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_line    0x000000000000a7cc       0x86 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_line    0x000000000000a852      0x3ca CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_line    0x000000000000ac1c      0x25a CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_line    0x000000000000ae76      0x1b6 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_line    0x000000000000b02c       0xb0 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_line    0x000000000000b0dc       0xbe CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_line    0x000000000000b19a      0x115 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_line    0x000000000000b2af      0xd00 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_line    0x000000000000bfaf      0x386 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_line    0x000000000000c335      0xbe3 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_line    0x000000000000cf18      0x222 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_line    0x000000000000d13a      0x26e CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_line    0x000000000000d3a8      0x697 CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_line    0x000000000000da3f      0xd3c CMakeFiles/hw3.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_line    0x000000000000e77b      0x904 CMakeFiles/hw3.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_line    0x000000000000f07f     0x1ef9 CMakeFiles/hw3.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .debug_line    0x0000000000010f78      0x3f0 CMakeFiles/hw3.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_line    0x0000000000011368      0xd23 CMakeFiles/hw3.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_line    0x000000000001208b      0xad8 CMakeFiles/hw3.dir/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_line    0x0000000000012b63     0x1478 CMakeFiles/hw3.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_line    0x0000000000013fdb      0x22b CMakeFiles/hw3.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+ .debug_line    0x0000000000014206       0x60 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0000000000014266      0x15e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-atoi.o)
+ .debug_line    0x00000000000143c4      0x1d1 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-callocr.o)
+ .debug_line    0x0000000000014595       0xe4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-impure.o)
+ .debug_line    0x0000000000014679      0x8e2 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-mallocr.o)
+ .debug_line    0x0000000000014f5b      0x13e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-mlock.o)
+ .debug_line    0x0000000000015099      0x6ed /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-reallocr.o)
+ .debug_line    0x0000000000015786      0x183 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-sbrkr.o)
+ .debug_line    0x0000000000015909      0x1ac /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-scanf.o)
+ .debug_line    0x0000000000015ab5      0x172 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
+ .debug_line    0x0000000000015c27      0x43f /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strtol.o)
+ .debug_line    0x0000000000016066     0x16ea /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-vfscanf.o)
+ .debug_line    0x0000000000017750       0x5e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-ctype_.o)
+ .debug_line    0x00000000000177ae      0x10f /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-errno.o)
+ .debug_line    0x00000000000178bd      0x5cd /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-findfp.o)
+ .debug_line    0x0000000000017e8a      0x3e2 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-fread.o)
+ .debug_line    0x000000000001826c      0x47d /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-freer.o)
+ .debug_line    0x00000000000186e9      0x262 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-fwalk.o)
+ .debug_line    0x000000000001894b       0xf2 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-iswspace.o)
+ .debug_line    0x0000000000018a3d      0x1be /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-iswspace_l.o)
+ .debug_line    0x0000000000018bfb      0x245 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-locale.o)
+ .debug_line    0x0000000000018e40      0x1c3 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-localeconv.o)
+ .debug_line    0x0000000000019003      0x288 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-mbrtowc.o)
+ .debug_line    0x000000000001928b      0x200 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-mbtowc_r.o)
+ .debug_line    0x000000000001948b      0x1e1 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-memmove.o)
+ .debug_line    0x000000000001966c      0x27e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-reent.o)
+ .debug_line    0x00000000000198ea      0x355 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-refill.o)
+ .debug_line    0x0000000000019c3f      0x1b4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-sccl.o)
+ .debug_line    0x0000000000019df3       0xad /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-sf_nan.o)
+ .debug_line    0x0000000000019ea0      0x238 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-stdio.o)
+ .debug_line    0x000000000001a0d8       0xb0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strcmp.o)
+ .debug_line    0x000000000001a188     0x1583 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strtod.o)
+ .debug_line    0x000000000001b70b      0x3ab /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strtoll.o)
+ .debug_line    0x000000000001bab6      0x38d /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strtoul.o)
+ .debug_line    0x000000000001be43      0x3b5 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strtoull.o)
+ .debug_line    0x000000000001c1f8      0x40c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-ungetc.o)
+ .debug_line    0x000000000001c604      0x1f6 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-wctomb_r.o)
+ .debug_line    0x000000000001c7fa      0x17e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-writer.o)
+ .debug_line    0x000000000001c978      0x183 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-closer.o)
+ .debug_line    0x000000000001cafb      0x2c6 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-fclose.o)
+ .debug_line    0x000000000001cdc1      0x472 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-fflush.o)
+ .debug_line    0x000000000001d233      0xaea /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-gdtoa-gethex.o)
+ .debug_line    0x000000000001dd1d      0x3fd /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-gdtoa-hexnan.o)
+ .debug_line    0x000000000001e11a      0x161 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-lnumeric.o)
+ .debug_line    0x000000000001e27b      0x17e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-lseekr.o)
+ .debug_line    0x000000000001e3f9      0x38b /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-makebuf.o)
+ .debug_line    0x000000000001e784     0x17e1 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-mprec.o)
+ .debug_line    0x000000000001ff65      0x17d /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-readr.o)
+ .debug_line    0x00000000000200e2       0xae /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-s_nan.o)
+ .debug_line    0x0000000000020190      0x1a9 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strncmp.o)
+ .debug_line    0x0000000000020339      0x1fc /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-fstatr.o)
+ .debug_line    0x0000000000020535      0x184 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-isattyr.o)
 
 .debug_str      0x0000000000000000     0x8a78
  .debug_str     0x0000000000000000      0x574 CMakeFiles/hw3.dir/src/hw3.c.obj
