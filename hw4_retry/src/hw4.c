@@ -34,8 +34,6 @@ static void write_register(uint8_t reg, uint16_t data) {
     uint8_t second_byte = (new_data) & 0xFF;
 
     
-
-
     cs_select();
     spi_write_blocking(spi_default, buf, 2);
     cs_deselect();
