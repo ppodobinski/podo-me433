@@ -15,7 +15,7 @@ add_executable(hw9
 )
 
 # Add pico_stdlib library which aggregates commonly used features
-target_link_libraries(hw9 pico_stdlib hardware_spi hardware_adc hardware_i2c ssd1306 hardware_irq hardware_uart pico_binary_info)
+target_link_libraries(hw9 pico_stdlib hardware_spi hardware_adc hardware_i2c hardware_irq hardware_uart pico_binary_info)
 
 # create map/bin/hex/uf2 file in addition to ELF.
 pico_add_extra_outputs(hw9)

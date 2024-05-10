@@ -3,7 +3,7 @@
 #include "pico/stdlib.h"
 #include "pico/binary_info.h"
 #include "hardware/i2c.h"
-#include "ssd1306.h"
+//#include "ssd1306.h"
 #include "hardware/uart.h"
 #include "hardware/irq.h"
 #include "hardware/adc.h"
@@ -55,8 +55,8 @@ int main()
 
   while (1) {
     int ifromcomp = 0;
-    scanf("%d",&ifromcomp);
-    printf("Comp sent: %d\n",ifromcomp);
+    scanf("%d", &ifromcomp);
+    printf("Comp sent: %d\r\n",ifromcomp);
     
     char txm[100];
     sprintf(txm, "%d\n", ifromcomp);
@@ -72,12 +72,11 @@ void on_uart_rx() {
     if (ch == "\n") {
       m[i] = 0;
       i = 0;
-      printf("From Zero: %s\n", m);
+      printf("From Zero: %s\r\n", m);
     }
     else{
       m[i] = ch;
       i++;
     }
   }
-
 }
