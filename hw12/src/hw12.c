@@ -34,9 +34,9 @@ void set_servo_angle() {
     // goal: servo moves from 0 degrees to 180 degrees and back in 4 seconds
     // 2 seconds to move from 0 to 180
     // 2 seconds to move from 180 to 0
-    pwm_set_gpio_level(pinPWM, 0.025); // 0 degrees, minimum duty cycle is 2.5%
+    pwm_set_gpio_level(pinPWM, wrap * 0.025); // 0 degrees, minimum duty cycle is 2.5%
     sleep_ms(2000);
-    pwm_set_gpio_level(pinPWM, 0.125); // 180 degrees, maximum duty cycle is 12.5%
+    pwm_set_gpio_level(pinPWM, wrap * 0.125); // 180 degrees, maximum duty cycle is 12.5%
     sleep_ms(2000);
 
 }
