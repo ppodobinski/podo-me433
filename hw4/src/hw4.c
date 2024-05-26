@@ -11,7 +11,7 @@
 #define max_ADC 1023
 #define midline 1023/2
 #define samples_per_cycle 100
-#define sine_or_tri 1 // sine is 1, tri is 0
+#define sine_or_tri 0 // sine is 1, tri is 0
 
 #ifdef PICO_DEFAULT_SPI_CSN_PIN
 static inline void cs_select() {
