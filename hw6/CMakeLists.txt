@@ -15,7 +15,7 @@ add_executable(hw6
 )
 
 # Add pico_stdlib library which aggregates commonly used features
-target_link_libraries(hw6 pico_stdlib hardware_spi ssd1306 hardware_i2c)
+target_link_libraries(hw6 pico_stdlib hardware_spi hardware_i2c)
 
 # create map/bin/hex/uf2 file in addition to ELF.
 pico_add_extra_outputs(hw6)
