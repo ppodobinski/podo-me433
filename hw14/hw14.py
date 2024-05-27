@@ -8,7 +8,7 @@ t = [] # column 0
 data1 = [] # column 1
 data2 = [] # column 2
 
-with open('sigD.csv') as f:
+with open('sigA.csv') as f:
     # open the csv file
     reader = csv.reader(f)
     for row in reader:
@@ -57,7 +57,6 @@ for i in range(len(t)):
     
     average = sum(current_arr) / len(current_arr)
     modified.append(average)
-    #print(len(modified))
 
 s = modified
 y = s # the data to make the fft from
@@ -129,6 +128,109 @@ ax1.loglog(frq_3,abs(Y_new),'r') # plotting the fft
 ax1.set_xlabel('Freq (Hz)')
 ax1.set_ylabel('|Y(freq)|')
 
-plt.show()
+# fig3.savefig("hw14_sigD_graph3")
 
-fig3.savefig("hw14_sigD_graph3")
+## PART 4
+
+fig4, (ax1) = plt.subplots(1,1)
+# modified FFT
+
+placeholder = []
+fir = []
+sum = 0
+# vary the h_arr based on whether it's for A, B, C, or D
+h = [
+    0.000000000000000000,
+    0.000007089254541241,
+    0.000040982153450201,
+    0.000114844201775314,
+    0.000229282466569670,
+    0.000366449499768783,
+    0.000485554151555692,
+    0.000521739991755640,
+    0.000390575038207813,
+    0.000000000000000000,
+    -0.000729631515130406,
+    -0.001838720477456150,
+    -0.003298397915155672,
+    -0.004983026030425332,
+    -0.006652247065974609,
+    -0.007949546407311679,
+    -0.008422577180419980,
+    -0.007567170301013336,
+    -0.004892489896200722,
+    0.000000000000000002,
+    0.007335206643526098,
+    0.017094609576550658,
+    0.028971907681722187,
+    0.042365331159356215,
+    0.056412667295446355,
+    0.070068200301094521,
+    0.082213446391851713,
+    0.091787166614097526,
+    0.097915951452103259,
+    0.100025605831429137,
+    0.097915951452103259,
+    0.091787166614097526,
+    0.082213446391851713,
+    0.070068200301094508,
+    0.056412667295446355,
+    0.042365331159356229,
+    0.028971907681722201,
+    0.017094609576550655,
+    0.007335206643526100,
+    0.000000000000000002,
+    -0.004892489896200725,
+    -0.007567170301013340,
+    -0.008422577180419980,
+    -0.007949546407311688,
+    -0.006652247065974618,
+    -0.004983026030425335,
+    -0.003298397915155677,
+    -0.001838720477456152,
+    -0.000729631515130406,
+    0.000000000000000000,
+    0.000390575038207813,
+    0.000521739991755639,
+    0.000485554151555692,
+    0.000366449499768783,
+    0.000229282466569670,
+    0.000114844201775314,
+    0.000040982153450201,
+    0.000007089254541241,
+    0.000000000000000000,
+]
+window_size = len(h)
+
+for val in y:
+    placeholder.append(val)
+    if len(placeholder) > window_size:
+        placeholder.pop(0)
+    if len(placeholder) == window_size:
+        for i in range(window_size):
+            current = placeholder[i] * h[i]
+            sum += current
+        fir.append(sum)
+
+s = fir
+y = s # the data to make the fft from
+n = len(y) # length of the signal
+k = np.arange(n)
+T = n/Fs
+frq_4 = k/T # two sides frequency range
+frq_4 = frq_4[range(int(n/2))] # one side frequency range
+Y_new = np.fft.fft(y)/n # fft computing and normalization
+Y_new = Y_new[range(int(n/2))]
+
+# original FFT
+ax1.loglog(frq,abs(Y),'k') # plotting the fft
+ax1.set_xlabel('Freq (Hz)')
+ax1.set_ylabel('|Y(freq)|')
+ax1.set_title(f"low pass filter, cutoff freq = X, bandwidth =X")
+
+# modified FFT
+ax1.loglog(frq_4,abs(Y_new),'r') # plotting the fft
+ax1.set_xlabel('Freq (Hz)')
+ax1.set_ylabel('|Y(freq)|')
+
+plt.show()
