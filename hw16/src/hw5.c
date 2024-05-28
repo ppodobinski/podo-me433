@@ -26,14 +26,14 @@ void chip_init() {
     i2c_write_blocking(i2c_default, ADDR, buf, 2, false);
 }
 
-void set(char v) {
+void set(unsigned char v) {
     // use the "handheld device dynamic" optimal setting (see datasheet)
     uint8_t buf[2];
 
     // send register number followed by its corresponding value
     buf[0] = REG_OLAT;
-    buf[1] = v<<7;
-    // buf[1] = v;
+    // buf[1] = v<<7;
+    buf[1] = v;
     i2c_write_blocking(i2c_default, ADDR, buf, 2, false);
 }
 
@@ -43,18 +43,18 @@ int read() {
     i2c_write_blocking(i2c_default, ADDR, &reg, 1, true);  // true to keep master control of bus
     i2c_read_blocking(i2c_default, ADDR, buf, 1, false);  // false - finished with bus
     
-    // return 1;
+    return 1;
     // set(0x80);
     //     // if gp0 is high
     //         // set gp7 high --> set(1)
     //     // else
     //         // set gp7 low --> set(0)
-    if (buf[0] & 0b1 == 0b1){
-        return 0;
-    }
-    else {
-        return 1;
-    }
+    // if (buf[0] & 0b1 == 0b1){
+    //     return 1
+    // }
+    // else {
+    //     return 0;
+    // }
 }
 
 int main() {
@@ -84,13 +84,12 @@ int main() {
         gpio_put(LED_PIN, 0);
         sleep_ms(100);
         
-
-        // set(0x80);
-        if (read()) {
-            set(1);
-        } else {
-            set(0);
-        }
+        set(0x80);
+        // if (read()) {
+        //     set(1);
+        // } else {
+        //     set(1);
+        // }
         // set(1);
         // set(0x80);
 
