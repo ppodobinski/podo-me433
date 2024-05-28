@@ -8,7 +8,7 @@ t = [] # column 0
 data1 = [] # column 1
 data2 = [] # column 2
 
-with open('sigD.csv') as f:
+with open('sigA.csv') as f:
     # open the csv file
     reader = csv.reader(f)
     for row in reader:
@@ -190,13 +190,13 @@ Y_new = Y_new[range(int(n/2))]
 ax1.loglog(frq,abs(Y),'k') # plotting the fft
 ax1.set_xlabel('Freq (Hz)')
 ax1.set_ylabel('|Y(freq)|')
-ax1.set_title(f"low pass filter, sampling rate = 15 Hz, cutoff freq = 4.65 Hz, transition bandwidth = 0.75 Hz, rectangular window type")
+ax1.set_title(f"low pass filter, 19 coefficients, sampling rate = 15 Hz, cutoff freq = 4.65 Hz, transition bandwidth = 0.75 Hz, rectangular window type")
 
 # modified FFT
 ax1.loglog(frq_4,abs(Y_new),'r') # plotting the fft
 ax1.set_xlabel('Freq (Hz)')
 ax1.set_ylabel('|Y(freq)|')
 
-fig4.savefig("hw14_sigD_graph4")
+fig4.savefig("hw14_sigA_graph4")
 
-plt.show()
+# plt.show()
