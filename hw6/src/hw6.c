@@ -2,6 +2,7 @@
 
 #include <string.h> // for memset
 #include "ssd1306.h"
+#include "font.h"
 #include "hardware/i2c.h"
 #include "pico/stdlib.h"
 
@@ -99,4 +100,68 @@ void ssd1306_drawPixel(unsigned char x, unsigned char y, unsigned char color) {
 void ssd1306_clear() {
     memset(ssd1306_buffer, 0, 512); // make every bit a 0, memset in string.h
     ssd1306_buffer[0] = 0x40; // first byte is part of command
+}
+
+void i2c() {
+    // I2C is "open drain", pull ups to keep signal high when no data is being sent
+    i2c_init(i2c_default, 100 * 1000);
+    gpio_set_function(PICO_DEFAULT_I2C_SDA_PIN, GPIO_FUNC_I2C);
+    gpio_set_function(PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C);
+    gpio_pull_up(PICO_DEFAULT_I2C_SDA_PIN);
+    gpio_pull_up(PICO_DEFAULT_I2C_SCL_PIN);
+}
+
+void drawMessage(int x, int y, char m) {
+    int i, j;
+    
+    for (i=0; i<5; i++){
+        char c = ASCII(letter-32)[i];
+        for (j=0; j<8;j++){
+            char bit = (c>>j)&0b1;
+
+            if (bit == 0b1){
+                ssd1306_drawPixel(x+i,y+j,1);
+            }
+            else {
+                ssd1306_drawPixel(x+i,y+j,0);
+            }
+        }
+    }
+    // while(m[i]) {
+    //     drawChar(x+i*5,y,m[i]);
+    //     i++;
+    // }
+    // update
+
+}
+
+
+int main() {
+    stdio_init_all();
+    ssd1306_setup();
+    i2c();
+
+    char message[100];
+    #ifndef PICO_DEFAULT_LED_PIN
+    #warning blink example requires a board with a regular LED
+    #else
+    const uint LED_PIN = PICO_DEFAULT_LED_PIN;
+    gpio_init(LED_PIN);
+    gpio_set_dir(LED_PIN, GPIO_OUT);
+
+    while (1) {
+        // Blink the builtin green LED at some frequency as a heart-beat
+        gpio_put(LED_PIN, 1);
+        sleep_ms(100);
+        gpio_put(LED_PIN, 0);
+        sleep_ms(100);
+        
+        unsigned int start = to_us_since_boot(get_absolute_time());
+
+        sprintf(message, "i = %d", i);
+        ssd1306_drawString(1,1,message);
+        ssd1306_update();
+    }
+
+    #endif
 }

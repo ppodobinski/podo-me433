@@ -12,6 +12,7 @@ pico_sdk_init()
 # rest of your project
 add_executable(hw6
     src/hw6.c
+    src/ssd1306.c
 )
 
 # Add pico_stdlib library which aggregates commonly used features
